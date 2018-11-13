@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Harmóniacukrászat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('images/kckgr_onpage.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>ide logo jön...</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-purple">menü</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-purple">kapcsolat</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">hétfő - péntek 10-23 | szombat 14-02</p>
+    <p class="w3-large">Városháza tér 6., Székelyudvarhely</p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Szendvicsek</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Sonkás <b>RON2.50</b></h5>
+      <h5>Svájci sajtos<b>RON3.50</b></h5>
+      <h5>Fitnesz szendo <b>RON1.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Sütemények</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Kati tészta <b>RON8.50</b></h5>
+      <h5>Annácska sütemény <b>RON5.50</b></h5>
+      <h5>Bukarest szelet <b>RON4.00</b></h5>
+      <h5>Vendégváró <b>RON6.50</b></h5>
+      <h5>Eclair <b>RON5.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Torták</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Tarlós szelet <b>RON2.50</b></h5>
+      <h5>Dobos szelet <b>RON2.00</b></h5>
+      <h5>Lili szelet <b>RON4.00</b></h5>
+      <h5>Csíz kéjk <b>RON5.50</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Kapcsolat</h1>
+    </div>
+    <div class="w3-container">
+      <p>Foglalás, vagy torta/sütemény rendelése:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Név" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Létszám" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2019-11-26 20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Üzenet és/vagy megjegyzés" required name="Message"></p>
+        <p><button class="w3-button" type="submit">ELKÜLD</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
